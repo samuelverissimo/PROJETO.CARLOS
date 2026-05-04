@@ -1,11 +1,54 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0 0 70px 0; /* reserve espaço para o footer */
     background-color: #f4f4f4;
 }
 
-.index-titulo {
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 25%; /* Define a largura da tabela */
+}
+
+table td, table th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center; /* Centraliza o texto dentro das células */
+}
+
+.container {
+    background-color: orange;
+    padding: 20px;
+}
+
+.tabela {
+    background-color: white;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: orange;
+    padding: 14px 20px;
+    text-align: center; /* coloca o texto no canto inferior direito */
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.12);
+    z-index: 1000;
+}
+
+.index {
     color: #000000;
     text-align: center;
 }

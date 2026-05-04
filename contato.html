@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livraria - Início</title>
+    <title>PSi - Contato</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>ENTRE EM CONTATO CONOSCO:</h1>
-            <button type="btn-back" class="btn" name="voltarinicio" onclick="">Voltar para o inicio</button>
-            <button class="btn" name="acessolivros" href="livros.html">Voltar para a pagina de livros</button>
-            <button class="btn" name="sobrenos" href="sobre.html">Saiba sobre nós!</button>
+            <a href="index.html" class="btn">Voltar para início</a>
+            <a href="livros.html" class="btn">Catálogo de livros</a>
+            <a href="sobre.html" class="btn">Saiba sobre nós</a>
         </header>
     </div>
 
@@ -21,13 +21,32 @@
             <h1>Preencha o formulário abaixo para entrar em contato conosco:</h1>
         </header>
         <form action="enviar" method="POST" class="formulario">
-            <label for="nome" method="POST">Nome:</label>
+            <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" placeholder="Digite aqui seu nome">
-            
-            <label for="email" method="POST">Email</label>
+            <br>
+            <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Digite aqui seu email">
-
-            <label for="mensagem" method="POST">Sua mensagem:</label>
+            <br>
+            <label for="mensagem">Sua mensagem:</label>
             <input type="text" id="mensagem" name="mensagem" placeholder="Digite aqui a sua mensagem">
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+    
+    <table>
+        <header>
+            <h2>Caso Prefira:</h2>
+        </header>
+        <tr>
+            <th>Endereço da loja física:</th>
+            <th>Telefone para contato:</th>
+            <th>Email para contato:</th>
+        </tr>
+        <tr>
+            <td>Rua Dom Expedito Lopes, 67 - Cohab I, Palmares-PE</td>
+            <td>(81) 9 8975 5248</td>
+            <td>phs12@discente.ifpe.edu.br</td>
+        </tr>
+    </table>
 </body>
 </html>
