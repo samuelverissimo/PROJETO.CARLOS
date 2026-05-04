@@ -24,13 +24,14 @@ table {
 
 table td, table th {
     border: 1px solid black;
-    padding: 8px;
+    padding: 4px;
     text-align: center; /* Centraliza o texto dentro das células */
 }
 
 .container {
     background-color: orange;
     padding: 20px;
+    margin-bottom: 1%;
 }
 
 .tabela {
@@ -40,15 +41,18 @@ table td, table th {
 
 .main-content {
     flex: 1 0 auto;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .footer {
     position: relative;
     width: 100%;
     background-color: orange;
-    padding: 14px 20px;
+    padding: 20px;
+    margin-top: 2.5%;
     text-align: center;
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.12);
 }
 
 .index {
