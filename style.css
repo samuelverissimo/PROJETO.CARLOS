@@ -1,3 +1,8 @@
+/* global box-sizing to avoid unexpected overflow */
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -19,7 +24,14 @@ table {
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
-    width: 25%; /* Define a largura da tabela */
+    width: 100%;
+    max-width: 760px; /* constrain table so it doesn't overflow */
+}
+
+/* ensure tables inside .tabela stay within the page */
+.tabela table {
+    width: 100%;
+    max-width: 760px;
 }
 
 table td, table th {
@@ -31,7 +43,16 @@ table td, table th {
 .container {
     background-color: orange;
     padding: 20px;
-    margin-bottom: 1%;
+    margin: 0 0 1%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Center header content within full-width container */
+.container header {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .tabela {
@@ -46,16 +67,58 @@ table td, table th {
     text-align: center;
 }
 
+@media (max-width: 900px) {
+    .main-content, .formulario-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .container header {
+        max-width: 95%;
+    }
+    table, .tabela table {
+        max-width: 100%;
+    }
+}
+
 .footer {
     position: relative;
     width: 100%;
     background-color: orange;
     padding: 20px;
-    margin-top: 2.5%;
+    margin-top: 5%;
     text-align: center;
 }
 
 .index {
     color: #000000;
     text-align: center;
+}
+
+.formulario-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }

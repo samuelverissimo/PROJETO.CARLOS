@@ -16,37 +16,34 @@
         </header>
     </div>
 
-    <div class="formulario">
+    <main class="main-content">
+    <div class="formulario-container">
         <header>
             <h1>Preencha o formulário abaixo para entrar em contato conosco:</h1>
         </header>
         <form action="enviar" method="POST" class="formulario">
-            <label for="nome">Nome:</label>
+            <label for="nome"><strong>Nome:</strong></label>
             <input type="text" id="nome" name="nome" placeholder="Digite aqui seu nome">
             <br>
-            <label for="email">Email</label>
+            <label for="email"><strong>Email:</strong></label>
             <input type="email" id="email" name="email" placeholder="Digite aqui seu email">
             <br>
-            <label for="mensagem">Sua mensagem:</label>
+            <label for="mensagem"><strong>Sua mensagem:</strong></label>
             <input type="text" id="mensagem" name="mensagem" placeholder="Digite aqui a sua mensagem">
             <button type="submit" class="btn">Enviar</button>
         </form>
+
+        <h2>Caso Prefira:</h2>
+        <ul>
+            <li><strong>Endereço da loja física:</strong> Rua Dom Expedito Lopes, 67 - Cohab I, Palmares-PE</li>
+            <li><strong>Telefone para contato:</strong> (81) 9 8975 5248</li>
+            <li><strong>Email para contato:</strong> phs12@discente.ifpe.edu.br</li>
+        </ul>
     </div>
-    
-    <table>
-        <header>
-            <h2>Caso Prefira:</h2>
-        </header>
-        <tr>
-            <th>Endereço da loja física:</th>
-            <th>Telefone para contato:</th>
-            <th>Email para contato:</th>
-        </tr>
-        <tr>
-            <td>Rua Dom Expedito Lopes, 67 - Cohab I, Palmares-PE</td>
-            <td>(81) 9 8975 5248</td>
-            <td>phs12@discente.ifpe.edu.br</td>
-        </tr>
-    </table>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Livraria PSI. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
