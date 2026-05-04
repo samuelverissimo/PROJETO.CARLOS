@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PSI - Início</title>
+    <style> 
+    html {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif; }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Bem-vindo à Livraria PSI!</h1>
-            <a href="index.html" class="btn">Voltar para Início</a>
-            <a href="contato.html" class="btn">Entre em contato</a>
-            <a href="sobre.html" class="btn">Saiba sobre nós</a>
+            <nav>
+                <a href="index.html" class="btn">Início</a>
+                <a href="contato.html" class="btn">Contato</a>
+                <a href="sobre.html" class="btn">Sobre</a>
+            </nav>
         </header>
     </div>
     <main class="main-content">
@@ -20,13 +25,16 @@
     <div class="tabela">
         <h1>Livros disponíveis</h1>
         <table>
-            <tr>
-                <th>Título</th>
-                <th>Autor</th>
-                <th>Gênero</th>
-                <th>Preço</th>
-                <th>Comprar</th>
-                
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Gênero</th>
+                    <th>Preço</th>
+                    <th>Comprar</th>
+                </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>O Senhor dos Anéis</td>
                     <td>J.R.R. Tolkien</td>
@@ -146,7 +154,7 @@
                     <td>R$ 33,90</td>
                     <td><a href="https://www.amazon.com.br/Grandes-Esperan%C3%A7as-Charles-Dickens/dp/8520920965" class="btn">Comprar</a></td>
                 </tr>
-            </tr>
+            </tbody>
         </table>
 </main>
 
