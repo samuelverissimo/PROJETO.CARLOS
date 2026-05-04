@@ -8,8 +8,11 @@ html, body {
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0 0 70px 0; /* reserve espaço para o footer */
+    padding: 0;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 table {
@@ -35,17 +38,17 @@ table td, table th {
     text-align: center;
 }
 
+.main-content {
+    flex: 1 0 auto;
+}
+
 .footer {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     background-color: orange;
     padding: 14px 20px;
-    text-align: center; /* coloca o texto no canto inferior direito */
+    text-align: center;
     box-shadow: 0 -2px 6px rgba(0,0,0,0.12);
-    z-index: 1000;
 }
 
 .index {
