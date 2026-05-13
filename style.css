@@ -44,6 +44,7 @@ nav a {
 
 .btn:hover {
     background-color: #e65c00;
+    transform: scale(1.0125);
 }
 
 /* Conteúdo principal */
@@ -96,6 +97,12 @@ td {
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
+}
+
+.card:hover,
+.card-2:hover,
+.card-3:hover {
+    transform: scale(1.0125);
 }
 
 /* Rodapé */
