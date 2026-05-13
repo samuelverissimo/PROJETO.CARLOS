@@ -1,0 +1,107 @@
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5eb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+
+    /* Faz o footer ficar no final */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #ff6b00;
+}
+
+/* Navegação */
+nav {
+    margin: 15px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/* Botões */
+.btn {
+    background-color: #ff6b00;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #e65c00;
+}
+
+/* Conteúdo principal */
+.main-content {
+    padding: 20px;
+    text-align: center;
+
+    /* Empurra o footer para baixo */
+    flex: 1;
+}
+
+/* Formulário */
+.formulario-container {
+    background-color: #ffe0c2;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid #ffb066;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #ff6b00;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Cards */
+.card,
+.card-2,
+.card-3 {
+    background-color: #ffe0c2;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #ff6b00;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
